@@ -10,7 +10,7 @@ io.on('connection', function(socket){
         io.emit(`${msg.shelter}`, msg)
     })
     socket.on('typing', function(msg){
-        socket.broadcast.emit(`${msg.shelter}/typing}`, msg)
+        socket.broadcast.emit(`${msg.shelter}/typing`, msg)
     })
 })
 
